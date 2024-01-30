@@ -15,7 +15,7 @@ export default {
     {
       name: 'Abdinasir Mursal',
       description: 'Fullstack Developer',
-      avatar: 'https://avatars.githubusercontent.com/u/83120892?v=4',
+      avatar: 'https://avatars.githubusercontent.com/u/115280340?v=4',
       children: (
         <>
           “Yonode transformed our development process, providing the freedom to prioritize essential business logic. It significantly slashed development hours, expediting the creation of a cutting-edge and highly efficient server infrastructure”
@@ -25,7 +25,7 @@ export default {
     {
       name: 'Mohammed Amin',
       description: 'Frontend Engineer',
-      avatar: 'https://avatars.githubusercontent.com/u/115280340?v=4',
+      avatar: 'https://avatars.githubusercontent.com/u/83120892?v=4',
       children: (
         <>
           "Yonode has been a game-changer for our server development. It empowered us to focus on core business logic while dramatically reducing development hours. Our server infrastructure is now modern and efficient, thanks to Yonode's impact."
