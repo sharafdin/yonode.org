@@ -72,7 +72,7 @@ interface MobileNavContentProps {
 }
 
 export function MobileNavContent(props: MobileNavContentProps) {
-  const { isOpen, onClose = () => {} } = props
+  const { isOpen, onClose = () => { } } = props
   const closeBtnRef = React.useRef<HTMLButtonElement>(null)
   const { pathname } = useRouter()
   const bgColor = useColorModeValue('whiteAlpha.900', 'blackAlpha.900')
@@ -131,10 +131,10 @@ export function MobileNavContent(props: MobileNavContentProps) {
                 </Flex>
                 <Stack alignItems="stretch" spacing="0">
                   {siteConfig.header.links.map(
-                    ({ href, id, label, ...props }, i) => {
+                    ({ id, label, ...props }, i) => {
                       return (
                         <NavLink
-                          href={href || `/#${id}`}
+                          href={`/#${id}`}
                           key={i}
                           {...(props as any)}
                         >
