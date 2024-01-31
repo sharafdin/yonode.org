@@ -48,10 +48,7 @@ import {
 const Home: NextPage = () => {
   return (
     <Box>
-      <SEO
-        title="Yonode - A Web Server Framework for Node.js"
-        description="A Web Server Framework for Node.js"
-      />
+      <SEO/>
       <Box>
         <HeroSection />
 
