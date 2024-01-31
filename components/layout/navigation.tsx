@@ -35,7 +35,7 @@ const Navigation: React.FC = () => {
 
   return (
     <HStack spacing="2" flexShrink={0}>
-      {siteConfig.header.links.map(({ id, ...props }, i) => {
+      {siteConfig.header.links.map(({ id }, i) => {
         return (
           <NavLink
             display={['none', null, 'block']}
@@ -46,7 +46,7 @@ const Navigation: React.FC = () => {
                 (id && activeId === id)
               )
             }
-            {...props}
+            
           />
         )
       })}
