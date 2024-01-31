@@ -2,13 +2,13 @@ export default {
   title: 'Loved by tech people',
   items: [
     {
-      name: 'Mc Hamouda',
-      description: 'Software Engineer',
+      name: 'Eng Fardowsa',
+      description: 'Backend Engineer',
       avatar:
-        'https://scontent.fmgq1-2.fna.fbcdn.net/v/t39.30808-6/327393903_1656046211506232_8771109005885974511_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=Yf31_6qnrP4AX8b-pwN&_nc_ht=scontent.fmgq1-2.fna&oh=00_AfBluOJDIdOQAgESlvyfIY8Mz__n3aDB-j7BzcnF2dbagA&oe=65BDAC95',
+        'https://avatars.githubusercontent.com/u/86529958?v=4',
       children: (
         <>
-         "Yonode revolutionized our server setup, granting us more time to concentrate on vital business logic. It drastically reduced development hours, enabling us to establish a modern and efficient server architecture quickly."
+         "Yonode has been a catalyst for a transformative shift in our server development. It has empowered us to prioritize essential business logic while making substantial reductions in development hours. As a result, our server infrastructure stands as a testament to modernity and efficiency, all thanks to the game-changing impact of Yonode."
         </>
       ),
     },
@@ -29,6 +29,36 @@ export default {
       children: (
         <>
           "Yonode has been a game-changer for our server development. It empowered us to focus on core business logic while dramatically reducing development hours. Our server infrastructure is now modern and efficient, thanks to Yonode's impact."
+        </>
+      ),
+    },
+    {
+      name: 'Omar Tood',
+      description: 'Software Developer',
+      avatar: 'https://avatars.githubusercontent.com/u/129175570?v=4',
+      children: (
+        <>
+          "Yonode has revolutionized our server development, allowing us to concentrate on core business logic while significantly cutting development hours. Thanks to Yonode, our server infrastructure is now both modern and highly efficient."
+        </>
+      ),
+    },
+    {
+      name: 'Eng Miirshe',
+      description: 'Mern Stack',
+      avatar: 'https://avatars.githubusercontent.com/u/126691024?v=4',
+      children: (
+        <>
+          "Yonode has truly transformed our server development landscape. By streamlining the process and dramatically reducing development hours, it has empowered us to prioritize core business logic. Our server infrastructure is now at the pinnacle of modernity and efficiency, all thanks to the remarkable impact of Yonode."
+        </>
+      ),
+    },
+    {
+      name: 'Eng Wireless',
+      description: 'Fullstack Engineer',
+      avatar: 'https://avatars.githubusercontent.com/u/112668705?v=4',
+      children: (
+        <>
+          "Yonode's influence on our server development has been profound. It has not only allowed us to put a strong focus on core business logic but has also significantly cut down development hours. Our server infrastructure now stands as a testament to modernity and efficiency, all thanks to the invaluable contributions of Yonode."
         </>
       ),
     },
