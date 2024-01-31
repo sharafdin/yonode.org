@@ -13,14 +13,10 @@ const siteConfig = {
   privacyUrl: '#',
   header: {
     links: [
-      {
-        id: 'features',
-        label: 'Features',
-      },
-      {
-        id: 'faq',
-        label: 'FAQ',
-      },
+      // {
+      //   href: 'https://docs.yonode.org',
+      //   label: 'Get Started',
+      // },
     ],
   },
   footer: {

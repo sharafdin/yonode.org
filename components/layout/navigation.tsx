@@ -53,11 +53,11 @@ const Navigation: React.FC = () => {
 
       <ThemeToggle />
 
-      <MobileNavButton
+      {/* <MobileNavButton
         ref={mobileNavBtnRef}
         aria-label="Open Menu"
         onClick={mobileNav.onOpen}
-      />
+      /> */}
 
       <MobileNavContent isOpen={mobileNav.isOpen} onClose={mobileNav.onClose} />
     </HStack>
