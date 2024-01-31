@@ -35,7 +35,7 @@ const Navigation: React.FC = () => {
 
   return (
     <HStack spacing="2" flexShrink={0}>
-      {siteConfig.header.links.map(({ id, ...props }, i) => {
+      {siteConfig.header.links.map(({ id }, i) => {
         return (
           <NavLink
             display={['none', null, 'block']}
@@ -46,18 +46,18 @@ const Navigation: React.FC = () => {
                 (id && activeId === id)
               )
             }
-            {...props}
+            
           />
         )
       })}
 
       <ThemeToggle />
 
-      <MobileNavButton
+      {/* <MobileNavButton
         ref={mobileNavBtnRef}
         aria-label="Open Menu"
         onClick={mobileNav.onOpen}
-      />
+      /> */}
 
       <MobileNavContent isOpen={mobileNav.isOpen} onClose={mobileNav.onClose} />
     </HStack>
