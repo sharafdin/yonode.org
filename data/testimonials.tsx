@@ -2,7 +2,7 @@ export default {
   title: 'Loved by tech people',
   items: [
     {
-      name: 'Eng Fardowsa',
+      name: 'Ismail Ainte',
       description: 'Backend Engineer',
       avatar:
         'https://avatars.githubusercontent.com/u/86529958?v=4',
