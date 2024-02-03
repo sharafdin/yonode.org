@@ -6,7 +6,7 @@ import { Logo } from "./logo";
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: "Yonode",
+    title: "Yonode | The Node.js Toolkit for Rapid Development",
     description: "The Node.js Toolkit for Rapid Development",
     openGraph: {
       type: "website",
