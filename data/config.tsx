@@ -39,7 +39,7 @@ const siteConfig = {
         label: "Contact",
       },
       {
-        href: "https://twitter.com/yonode",
+        href: "https://twitter.com/isasharafdin",
         label: <FaTwitter size="14" />,
       },
       {

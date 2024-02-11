@@ -25,7 +25,7 @@ export default {
     {
       name: 'Mohammed Amin',
       description: 'Frontend Engineer',
-      avatar: 'https://avatars.githubusercontent.com/u/83120892?v=4',
+      avatar: '',
       children: (
         <>
           "Yonode has been a game-changer for our server development. It empowered us to focus on core business logic while dramatically reducing development hours. Our server infrastructure is now modern and efficient, thanks to Yonode's impact."
@@ -55,7 +55,7 @@ export default {
     {
       name: 'Eng Wireless',
       description: 'Fullstack Engineer',
-      avatar: 'https://avatars.githubusercontent.com/u/112668705?v=4',
+      avatar: '',
       children: (
         <>
           "Yonode's influence on our server development has been profound. It has not only allowed us to put a strong focus on core business logic but has also significantly cut down development hours. Our server infrastructure now stands as a testament to modernity and efficiency, all thanks to the invaluable contributions of Yonode."

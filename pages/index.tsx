@@ -97,7 +97,7 @@ const HeroSection: React.FC = () => {
                 </ButtonLink>
                 <ButtonLink
                   size="lg"
-                  href="https://yonode.org/learn"
+                  href="https://github.com/sharafdin/yonode"
                   variant="outline"
                   rightIcon={
                     <Icon
@@ -112,7 +112,7 @@ const HeroSection: React.FC = () => {
                     />
                   }
                 >
-                  Learn Yonode
+                  View on github
                 </ButtonLink>
               </ButtonGroup>
             </FallInPlace>
@@ -190,17 +190,14 @@ const HeroSection: React.FC = () => {
 };
 
 const HighlightsSection = () => {
-  const { value, onCopy, hasCopied } = useClipboard("yarn add yonode");
+  const { onCopy, hasCopied } = useClipboard("npx yonode@latest");
 
   return (
     <Highlights>
-      <HighlightsItem colSpan={[1, null, 2]} title="Core components">
+      <HighlightsItem colSpan={[1, null, 2]} title="Key Features">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Get started for free with <Em>30+ open source components</Em>.
-            Including authentication screens with Clerk, Supabase and Magic.
-            Fully functional forms with React Hook Form. Data tables with React
-            Table.
+          Explore <Em>Yonode</Em>, an <Em>open-source Node.js</Em> toolkit for backend development, featuring many ecosystems. It offers <Em>controllers, models, middlewares, authentication,</Em> and <Em>authorization</Em> to streamline your process, all completely free.
           </Text>
           <Flex
             rounded="full"
@@ -215,10 +212,10 @@ const HighlightsSection = () => {
           >
             <Box>
               <Text color="yellow.400" display="inline">
-                yarn add
+                npx
               </Text>{" "}
               <Text color="cyan.300" display="inline">
-                yonode
+              yonode@latest
               </Text>
             </Box>
             <IconButton
@@ -226,14 +223,15 @@ const HighlightsSection = () => {
               aria-label="Copy install command"
               onClick={onCopy}
               variant="ghost"
-              ms="4"
+              ms="2"
+              mr={'2'}
               isRound
               color="white"
             />
           </Flex>
         </VStack>
       </HighlightsItem>
-      <HighlightsItem title="Solid foundations">
+      <HighlightsItem title="Proven Efficiency">
         <Text color="muted" fontSize="lg">
           &quot;We believe in efficiency, and so should you. Yonode is built on
           top of the most productive and established tools in the field, sparing
@@ -243,7 +241,7 @@ const HighlightsSection = () => {
       <HighlightsTestimonialItem
         name="Mc Hamouda"
         description="Software Engineer"
-        avatar="https://scontent.fmgq1-2.fna.fbcdn.net/v/t39.30808-6/327393903_1656046211506232_8771109005885974511_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=Yf31_6qnrP4AX8b-pwN&_nc_ht=scontent.fmgq1-2.fna&oh=00_AfBluOJDIdOQAgESlvyfIY8Mz__n3aDB-j7BzcnF2dbagA&oe=65BDAC95"
+        avatar="https://scontent.fmgq2-1.fna.fbcdn.net/v/t39.30808-6/327393903_1656046211506232_8771109005885974511_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=e2HNc4gOPFgAX-Wy6EM&_nc_ht=scontent.fmgq2-1.fna&oh=00_AfDFBXOOnFtg9_5lq3uekW6SGdOkUzKMgMYt5ypCDsOmZg&oe=65CD7E95"
         gradient={["pink.200", "purple.500"]}
       >
         &quot;Yonode revolutionized our server setup, granting us more time to
@@ -321,13 +319,13 @@ const TestimonialsSection = () => {
 
 export default Home;
 
-// export async function getStaticProps() {
-//   return {
-//     props: {
-//       announcement: {
-//         title: 'Yonode Elevates Servers!',
-//         href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order',
-//       },
-//     },
-//   }
-// }
+export async function getStaticProps() {
+  return {
+    props: {
+      announcement: {
+        title: 'Yonode is under beta version',
+        href: 'https://www.npmjs.com/package/yonode?activeTab=versions',
+      },
+    },
+  }
+}
