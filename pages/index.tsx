@@ -61,7 +61,6 @@ const Home: NextPage = () => {
 };
 
 const HeroSection: React.FC = () => {
-  const { value, onCopy, hasCopied } = useClipboard("yarn add yonode");
 
   return (
     <Box position="relative" overflow="hidden">
@@ -88,7 +87,6 @@ const HeroSection: React.FC = () => {
           >
             <FallInPlace delay={0.8}>
               <HStack pt="4" pb="12" spacing="8">
-                {/* <NextjsLogo height="28px" /> <ChakraLogo height="20px" /> */}
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
@@ -130,9 +128,9 @@ const HeroSection: React.FC = () => {
             <FallInPlace delay={1}>
               <Box overflow="hidden" height="100%">
                 <Image
-                  src="/static/screenshots/list.png"
+                  src="/static/screenshots/demo.png"
                   layout="fixed"
-                  width={1200}
+                  width={1400}
                   height={762}
                   alt="Screenshot of a ListPage in Saas UI Pro"
                   quality="75"
