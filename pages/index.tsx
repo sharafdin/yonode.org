@@ -79,7 +79,7 @@ const HeroSection: React.FC = () => {
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Yonode is a <Em>Node.js framework</Em>
+                Yonode is a <Em>Node.js toolkit</Em>
                 <Br /> that streamlines your workflow, enabling you <Br /> to
                 craft efficient server solutions rapidly.
               </FallInPlace>
