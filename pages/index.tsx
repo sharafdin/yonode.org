@@ -239,7 +239,7 @@ const HighlightsSection = () => {
       <HighlightsTestimonialItem
         name="Mc Hamouda"
         description="Software Engineer"
-        avatar="https://scontent.fmgq2-1.fna.fbcdn.net/v/t39.30808-6/327393903_1656046211506232_8771109005885974511_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=e2HNc4gOPFgAX-Wy6EM&_nc_ht=scontent.fmgq2-1.fna&oh=00_AfDFBXOOnFtg9_5lq3uekW6SGdOkUzKMgMYt5ypCDsOmZg&oe=65CD7E95"
+        avatar="https://avatars.githubusercontent.com/u/41045784?v=4"
         gradient={["pink.200", "purple.500"]}
       >
         &quot;Yonode revolutionized our server setup, granting us more time to
