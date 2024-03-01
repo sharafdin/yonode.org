@@ -30,7 +30,8 @@ const siteConfig = {
     copyright: (
       <>
         Built by{" "}
-        <Link href="https://twitter.com/isasharafdin">Mr Sharafdin</Link>
+        <Link href="https://twitter.com/isasharafdin">Mr Sharafdin</Link> with{" "}
+        <Link href="https://saas-js.dev/">SASSJS</Link>
       </>
     ),
     links: [
