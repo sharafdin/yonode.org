@@ -15,7 +15,7 @@ export default {
     {
       name: ' Mohamed Turaab ',
       description: 'Frontend Developer',
-      avatar: 'https://avatars.githubusercontent.com/u/115280340?v=4',
+      avatar: '',
       children: (
         <>
           “Yonode transformed our development process, providing the freedom to prioritize essential business logic. It significantly slashed development hours, expediting the creation of a cutting-edge and highly efficient server infrastructure”
