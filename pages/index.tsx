@@ -321,7 +321,7 @@ export async function getStaticProps() {
   return {
     props: {
       announcement: {
-        title: 'Yonode is under beta version',
+        title: 'Yonode has officially launched!',
         href: 'https://www.npmjs.com/package/yonode?activeTab=versions',
       },
     },
