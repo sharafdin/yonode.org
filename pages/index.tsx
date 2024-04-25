@@ -30,10 +30,16 @@ import {
   FiCopy,
   FiGrid,
   FiSliders,
-  FiSmile,
   FiThumbsUp,
 } from "react-icons/fi";
-
+import {
+  AiOutlineFileText,
+  AiOutlineDatabase,
+  AiOutlineTool,
+} from "react-icons/ai";
+import { BiCodeCurly, BiChip } from "react-icons/bi";
+import { MdOutlineFolderSpecial } from "react-icons/md";
+import { RiShieldKeyholeLine } from "react-icons/ri";
 import { ButtonLink } from "components/button-link/button-link";
 import { Testimonial, Testimonials } from "components/testimonials";
 
@@ -152,33 +158,58 @@ const HeroSection: React.FC = () => {
         pt="20"
         features={[
           {
-            title: "Templates",
-            icon: FiSmile,
-            description: "All components strictly follow WAI-ARIA standards.",
+            title: "Yonode Templates",
+            icon: AiOutlineFileText,
+            description:
+              "Yonode templates are pre-built Node.js structures from the Yonode toolkit, designed to simplify backend development by streamlining server setups and database connections, enabling faster creation of unique features",
             iconPosition: "left",
             delay: 0.6,
           },
           {
             title: "Dual-Language Support",
-            icon: FiSliders,
+            icon: BiCodeCurly,
             description:
-              "JavaScript and TypeScript: Yonode templates are available for both JavaScript and TypeScript, offering flexibility in choosing the language that best suits your project's needs or your personal preference. This dual-language support ensures that the benefits of Yonode, such as rapid development and adherence to best practices, are accessible to a wider developer community.",
+              "Yonode support both JavaScript and TypeScript, offering flexibility to match project needs or preferences. This dual-language capability broadens access to Yonode's rapid development and best practices.",
             iconPosition: "left",
             delay: 0.8,
           },
           {
-            title: "Database Configurations",
-            icon: FiGrid,
+            title: "MVC Folder Structure",
+            icon: MdOutlineFolderSpecial,
             description:
-              "Templates come with pre-configured database setups, including examples or configurations for connecting to various types of databases (SQL, NoSQL) and possibly integrating Object-Relational Mapping (ORM) tools. These setups facilitate database interactions using object-oriented programming.",
+              "Yonode use a Model-View-Controller (MVC) directory layout to promote clean code separation and scalability, supporting both JavaScript and TypeScript projects.",
             iconPosition: "left",
             delay: 1,
           },
           {
-            title: "Productive",
-            icon: FiThumbsUp,
+            title: "Database Configurations",
+            icon: AiOutlineDatabase,
             description:
-              "Designed to reduce boilerplate and fully typed, build your product at speed.",
+              "Yonode include pre-configured setups for various databases (SQL, NoSQL) and may integrate Object-Relational Mapping (ORM) tools. These configurations facilitate database interactions using object-oriented programming.",
+            iconPosition: "left",
+            delay: 1,
+          },
+          {
+            title: "Authentication Flows",
+            icon: RiShieldKeyholeLine,
+            description:
+              "Yonode provides templates specifically designed for implementing secure authentication mechanisms, such as login, and registration.",
+            iconPosition: "left",
+            delay: 1,
+          },
+          {
+            title: "Middleware Integrations",
+            icon: BiChip,
+            description:
+              "Yonode include common middleware setups for logging, error handling, body parsing, and session management, crucial for preprocessing requests, enhancing security, and extending functionality.",
+            iconPosition: "left",
+            delay: 1.1,
+          },
+          {
+            title: "Environment Setup",
+            icon: AiOutlineTool,
+            description:
+              "Yonode provide examples for managing environment variables and configurations, essential for setting variables across different environments without embedding sensitive information directly in the code.",
             iconPosition: "left",
             delay: 1.1,
           },
