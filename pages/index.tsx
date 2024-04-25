@@ -167,10 +167,10 @@ const HeroSection: React.FC = () => {
             delay: 0.8,
           },
           {
-            title: "Composable",
+            title: "Database Configurations",
             icon: FiGrid,
             description:
-              "Compose components to fit your needs and mix them together to create new ones.",
+              "Templates come with pre-configured database setups, including examples or configurations for connecting to various types of databases (SQL, NoSQL) and possibly integrating Object-Relational Mapping (ORM) tools. These setups facilitate database interactions using object-oriented programming.",
             iconPosition: "left",
             delay: 1,
           },
