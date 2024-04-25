@@ -48,7 +48,7 @@ import {
 const Home: NextPage = () => {
   return (
     <Box>
-      <SEO/>
+      <SEO />
       <Box>
         <HeroSection />
 
@@ -61,7 +61,6 @@ const Home: NextPage = () => {
 };
 
 const HeroSection: React.FC = () => {
-
   return (
     <Box position="relative" overflow="hidden">
       <BackgroundGradient height="100%" />
@@ -86,11 +85,14 @@ const HeroSection: React.FC = () => {
             }
           >
             <FallInPlace delay={0.8}>
-              <HStack pt="4" pb="12" spacing="8">
-              </HStack>
+              <HStack pt="4" pb="12" spacing="8"></HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="https://docs.yonode.org">
+                <ButtonLink
+                  colorScheme="primary"
+                  size="lg"
+                  href="https://docs.yonode.org"
+                >
                   Get Started
                 </ButtonLink>
                 <ButtonLink
@@ -142,7 +144,7 @@ const HeroSection: React.FC = () => {
         </Stack>
       </Container>
 
-      {/* <Features
+      <Features
         id="benefits"
         columns={[1, 2, 4]}
         iconSize={4}
@@ -150,17 +152,17 @@ const HeroSection: React.FC = () => {
         pt="20"
         features={[
           {
-            title: "Accessible",
+            title: "Templates",
             icon: FiSmile,
             description: "All components strictly follow WAI-ARIA standards.",
             iconPosition: "left",
             delay: 0.6,
           },
           {
-            title: "Themable",
+            title: "Dual-Language Support",
             icon: FiSliders,
             description:
-              "Fully customize all components to your brand with theme support and style props.",
+              "JavaScript and TypeScript: Yonode templates are available for both JavaScript and TypeScript, offering flexibility in choosing the language that best suits your project's needs or your personal preference. This dual-language support ensures that the benefits of Yonode, such as rapid development and adherence to best practices, are accessible to a wider developer community.",
             iconPosition: "left",
             delay: 0.8,
           },
@@ -182,7 +184,7 @@ const HeroSection: React.FC = () => {
           },
         ]}
         reveal={FallInPlace}
-      /> */}
+      />
     </Box>
   );
 };
@@ -195,7 +197,11 @@ const HighlightsSection = () => {
       <HighlightsItem colSpan={[1, null, 2]} title="Key Features">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-          Explore <Em>Yonode</Em>, an <Em>open-source Node.js</Em> toolkit for backend development, featuring many ecosystems. It offers <Em>controllers, models, middlewares, authentication,</Em> and <Em>authorization</Em> to streamline your process, all completely free.
+            Explore <Em>Yonode</Em>, an <Em>open-source Node.js</Em> toolkit for
+            backend development, featuring many ecosystems. It offers{" "}
+            <Em>controllers, models, middlewares, authentication,</Em> and{" "}
+            <Em>authorization</Em> to streamline your process, all completely
+            free.
           </Text>
           <Flex
             rounded="full"
@@ -213,7 +219,7 @@ const HighlightsSection = () => {
                 npx
               </Text>{" "}
               <Text color="cyan.300" display="inline">
-              yonode@latest
+                yonode@latest
               </Text>
             </Box>
             <IconButton
@@ -222,7 +228,7 @@ const HighlightsSection = () => {
               onClick={onCopy}
               variant="ghost"
               ms="2"
-              mr={'2'}
+              mr={"2"}
               isRound
               color="white"
             />
@@ -321,9 +327,9 @@ export async function getStaticProps() {
   return {
     props: {
       announcement: {
-        title: 'Yonode has officially launched!',
-        href: 'https://www.npmjs.com/package/yonode?activeTab=versions',
+        title: "Yonode has officially launched!",
+        href: "https://www.npmjs.com/package/yonode?activeTab=versions",
       },
     },
-  }
+  };
 }
