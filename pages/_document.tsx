@@ -16,13 +16,13 @@ export default class Document extends NextDocument {
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="https://avatars.githubusercontent.com/u/138872151?s=200&v=4"
+            href="yonode/yonode icon-02.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="https://avatars.githubusercontent.com/u/138872151?s=200&v=4"
+            href="/yonode/yonode icon-02.png"
           />
           <link rel="manifest" href="/static/favicons/manifest.json" />
         </Head>

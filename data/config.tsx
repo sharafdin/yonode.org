@@ -16,7 +16,7 @@ const siteConfig = {
       siteName: "Yonode",
       images: [
         {
-          url: "https://avatars.githubusercontent.com/u/138872151?s=200&v=4",
+          url: "../public/yonode/yonode icon-02.png",
         },
       ],
     },
