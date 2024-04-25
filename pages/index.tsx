@@ -30,10 +30,16 @@ import {
   FiCopy,
   FiGrid,
   FiSliders,
-  FiSmile,
   FiThumbsUp,
 } from "react-icons/fi";
-
+import {
+  AiOutlineFileText,
+  AiOutlineDatabase,
+  AiOutlineTool,
+} from "react-icons/ai";
+import { BiCodeCurly, BiChip } from "react-icons/bi";
+import { MdOutlineFolderSpecial } from "react-icons/md";
+import { RiShieldKeyholeLine } from "react-icons/ri";
 import { ButtonLink } from "components/button-link/button-link";
 import { Testimonial, Testimonials } from "components/testimonials";
 
@@ -48,7 +54,7 @@ import {
 const Home: NextPage = () => {
   return (
     <Box>
-      <SEO/>
+      <SEO />
       <Box>
         <HeroSection />
 
@@ -61,7 +67,6 @@ const Home: NextPage = () => {
 };
 
 const HeroSection: React.FC = () => {
-
   return (
     <Box position="relative" overflow="hidden">
       <BackgroundGradient height="100%" />
@@ -86,11 +91,14 @@ const HeroSection: React.FC = () => {
             }
           >
             <FallInPlace delay={0.8}>
-              <HStack pt="4" pb="12" spacing="8">
-              </HStack>
+              <HStack pt="4" pb="12" spacing="8"></HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="https://docs.yonode.org">
+                <ButtonLink
+                  colorScheme="primary"
+                  size="lg"
+                  href="https://docs.yonode.org"
+                >
                   Get Started
                 </ButtonLink>
                 <ButtonLink
@@ -142,7 +150,7 @@ const HeroSection: React.FC = () => {
         </Stack>
       </Container>
 
-      {/* <Features
+      <Features
         id="benefits"
         columns={[1, 2, 4]}
         iconSize={4}
@@ -150,39 +158,64 @@ const HeroSection: React.FC = () => {
         pt="20"
         features={[
           {
-            title: "Accessible",
-            icon: FiSmile,
-            description: "All components strictly follow WAI-ARIA standards.",
+            title: "Yonode Templates",
+            icon: AiOutlineFileText,
+            description:
+              "Yonode templates are pre-built Node.js structures from the Yonode toolkit, designed to simplify backend development by streamlining server setups and database connections, enabling faster creation of unique features",
             iconPosition: "left",
             delay: 0.6,
           },
           {
-            title: "Themable",
-            icon: FiSliders,
+            title: "Dual-Language Support",
+            icon: BiCodeCurly,
             description:
-              "Fully customize all components to your brand with theme support and style props.",
+              "Yonode support both JavaScript and TypeScript, offering flexibility to match project needs or preferences. This dual-language capability broadens access to Yonode's rapid development and best practices.",
             iconPosition: "left",
             delay: 0.8,
           },
           {
-            title: "Composable",
-            icon: FiGrid,
+            title: "MVC Folder Structure",
+            icon: MdOutlineFolderSpecial,
             description:
-              "Compose components to fit your needs and mix them together to create new ones.",
+              "Yonode use a Model-View-Controller (MVC) directory layout to promote clean code separation and scalability, supporting both JavaScript and TypeScript projects.",
             iconPosition: "left",
             delay: 1,
           },
           {
-            title: "Productive",
-            icon: FiThumbsUp,
+            title: "Database Configurations",
+            icon: AiOutlineDatabase,
             description:
-              "Designed to reduce boilerplate and fully typed, build your product at speed.",
+              "Yonode include pre-configured setups for various databases (SQL, NoSQL) and may integrate Object-Relational Mapping (ORM) tools. These configurations facilitate database interactions using object-oriented programming.",
+            iconPosition: "left",
+            delay: 1,
+          },
+          {
+            title: "Authentication Flows",
+            icon: RiShieldKeyholeLine,
+            description:
+              "Yonode provides templates specifically designed for implementing secure authentication mechanisms, such as login, and registration.",
+            iconPosition: "left",
+            delay: 1,
+          },
+          {
+            title: "Middleware Integrations",
+            icon: BiChip,
+            description:
+              "Yonode include common middleware setups for logging, error handling, body parsing, and session management, crucial for preprocessing requests, enhancing security, and extending functionality.",
+            iconPosition: "left",
+            delay: 1.1,
+          },
+          {
+            title: "Environment Setup",
+            icon: AiOutlineTool,
+            description:
+              "Yonode provide examples for managing environment variables and configurations, essential for setting variables across different environments without embedding sensitive information directly in the code.",
             iconPosition: "left",
             delay: 1.1,
           },
         ]}
         reveal={FallInPlace}
-      /> */}
+      />
     </Box>
   );
 };
@@ -195,7 +228,11 @@ const HighlightsSection = () => {
       <HighlightsItem colSpan={[1, null, 2]} title="Key Features">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-          Explore <Em>Yonode</Em>, an <Em>open-source Node.js</Em> toolkit for backend development, featuring many ecosystems. It offers <Em>controllers, models, middlewares, authentication,</Em> and <Em>authorization</Em> to streamline your process, all completely free.
+            Explore <Em>Yonode</Em>, an <Em>open-source Node.js</Em> toolkit for
+            backend development, featuring many ecosystems. It offers{" "}
+            <Em>controllers, models, middlewares, authentication,</Em> and{" "}
+            <Em>authorization</Em> to streamline your process, all completely
+            free.
           </Text>
           <Flex
             rounded="full"
@@ -213,7 +250,7 @@ const HighlightsSection = () => {
                 npx
               </Text>{" "}
               <Text color="cyan.300" display="inline">
-              yonode@latest
+                yonode@latest
               </Text>
             </Box>
             <IconButton
@@ -222,7 +259,7 @@ const HighlightsSection = () => {
               onClick={onCopy}
               variant="ghost"
               ms="2"
-              mr={'2'}
+              mr={"2"}
               isRound
               color="white"
             />
@@ -321,9 +358,9 @@ export async function getStaticProps() {
   return {
     props: {
       announcement: {
-        title: 'Yonode has officially launched!',
-        href: 'https://www.npmjs.com/package/yonode?activeTab=versions',
+        title: "Yonode has officially launched!",
+        href: "https://www.npmjs.com/package/yonode?activeTab=versions",
       },
     },
-  }
+  };
 }
