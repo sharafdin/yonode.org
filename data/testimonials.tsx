@@ -88,17 +88,36 @@ export default {
       ),
     },
     {
-      name: "Mohammed Amin",
-      description: "Frontend Engineer",
-      avatar: "",
+      name: "Mohamed Sharif",
+      description: "Software Engineer, CEO of Muraadpay",
+      avatar: "https://avatars.githubusercontent.com/u/86240087?v=4",
       children: (
         <>
-          "Yonode has been a game-changer for our server development. It
-          empowered us to focus on core business logic while dramatically
-          reducing development hours. Our server infrastructure is now modern
-          and efficient, thanks to Yonode's impact."
+          "Yonode has elevated our development process, boosting backend efficiency and code quality. Its intuitive setup and powerful features simplify integration of essentials like database connections and security layers, streamlining workflow and enabling scalable, high-quality solutions. For developers looking to enhance backend architecture with speed and precision, Yonode is a game-changer."
+          {
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginTop: "20px",
+              }}
+            >
+              <Link
+                style={{ marginRight: "18px" }}
+                href={"https://github.com/Mohamedsharif1"}
+              >
+                {<FaGithub size={"20px"} />}
+              </Link>
+              <Link
+                style={{ marginRight: "18px" }}
+                href={"https://x.com/Mohamedsharif61"}
+              >
+                {<FaTwitter size={"20px"} />}
+              </Link>
+            </div>
+          }
         </>
       ),
-    },
+    }
   ],
 };
